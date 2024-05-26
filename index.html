@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scientific Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="main-navbar">
+        <h2>Scientific Calculator</h2>
+    </nav>
+    <br>
+
+    <div class="Calculator">
+        <input type="text" class="display" id="display" readonly>
+        <div class="buttons">
+            <button class="button" id="b2" onclick="clear_display()">C</button>
+            <button class="button" id="b3" onclick="delete_last()">DEL</button>
+            <button class="button special" onclick="append_to_display('(')">(</button>
+            
+            <button class="button special" onclick="append_to_display(')')">)</button>
+            <button class="button special" onclick="convert_to_fraction()">FRAC</button>
+            <button class="button special" onclick="append_to_display1('-')">-/+</button>
+
+            <button class="button special" onclick="append_to_display('√')">√</button>
+            <button class="button special" onclick="append_to_display('**2')">x²</button>
+            <button class="button special" onclick="append_to_display('**3')">x³</button>
+            
+            <button class="button special" onclick="append_to_display('%')">mod</button>
+            <button class="button special" onclick="append_to_display('^')">x^y</button>
+            <button class="button special" onclick="applyFunction('abs')">|x|</button>
+            
+            <button class="button special" onclick="append_to_display('log(')">log</button>
+            <button class="button special" onclick="append_to_display('ln(')">ln</button>
+            <button class="button" onclick="append_to_display('7')">7</button>
+            
+            <button class="button" onclick="append_to_display('8')">8</button>
+            <button class="button" onclick="append_to_display('9')">9</button>
+            <button class="button special" id="o1" onclick="append_to_display('/')">/</button>
+            
+            
+            <button class="button special" onclick="append_to_display('sin(')">sin</button>
+            <button class="button special" onclick="append_to_display('cos(')">cos</button>
+            <button class="button" onclick="append_to_display('4')">4</button>
+            
+            <button class="button" onclick="append_to_display('5')">5</button>
+            <button class="button" onclick="append_to_display('6')">6</button>
+            <button class="button special" id="o2" onclick="append_to_display('*')">*</button>
+            
+            <button class="button special" onclick="append_to_display('tan(')">tan</button>
+            <button class="button special" onclick="append_to_Display('Math.PI')">π</button>
+            <button class="button" onclick="append_to_display('1')">1</button>
+            
+            <button class="button" onclick="append_to_display('2')">2</button>
+            <button class="button" onclick="append_to_display('3')">3</button>
+            <button class="button special" id="o3" onclick="append_to_display('-')">-</button>
+           
+            <button class="button special" onclick="applyFunction('ceil')">⌈x⌉</button>
+            <button class="button special" onclick="applyFunction('floor')">⌊x⌋</button>
+            <button class="button" onclick="append_to_display('0')">0</button>
+            
+            <button class="button special" id="o4" onclick="append_to_display('.')">.</button>
+            <button class="button special" id="b1" onclick="calculate_result()">=</button>
+            <button class="button special" id="o5" onclick="append_to_display('+')">+</button>
+            
+        </div>
+        
+    </div>
+    <br>
+    <footer class="footer">
+        <h2>EasyCalc: Your Simple and Convenient Calculator Solution</h2>
+        <h4>Created by Niroban@.Inc</h4>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
